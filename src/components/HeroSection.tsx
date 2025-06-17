@@ -23,17 +23,17 @@ export default function HeroSection({ className = '' }: HeroSectionProps) {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main Heading */}
         <div className="mb-8">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-4">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 font-heading tracking-tight">
             <span className="block">Building the Future with</span>
             <AnimatedText 
               words={['Agentic AI', 'Machine Learning', 'Generative AI']}
-              className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent"
+              className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent font-heading"
             />
           </h1>
         </div>
         
         {/* Subtitle */}
-        <p className="text-xl sm:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl sm:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-sans">
           Transforming ideas into intelligent solutions through cutting-edge AI technologies, 
           machine learning algorithms, and innovative generative AI systems.
         </p>
@@ -43,7 +43,7 @@ export default function HeroSection({ className = '' }: HeroSectionProps) {
           <CTAButton 
             href="#projects" 
             variant="primary"
-            className="group"
+            className="group font-heading"
           >
             View My Work
             <svg 
@@ -59,7 +59,7 @@ export default function HeroSection({ className = '' }: HeroSectionProps) {
           <CTAButton 
             href="#contact" 
             variant="secondary"
-            className="group"
+            className="group font-heading"
           >
             Let's Connect
             <svg 
