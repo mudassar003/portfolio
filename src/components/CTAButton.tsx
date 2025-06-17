@@ -19,11 +19,11 @@ export function CTAButton({
   className = '',
   onClick,
 }: CTAButtonProps) {
-  const baseClasses = 'inline-flex items-center px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 ease-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-opacity-50';
+  const baseClasses = 'inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold rounded-full transition-all duration-300 ease-out transform active:scale-95 sm:hover:scale-105 focus:outline-none focus:ring-4 focus:ring-opacity-50 touch-manipulation';
   
   const variantClasses = {
-    primary: 'bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-purple-500/25 focus:ring-purple-500',
-    secondary: 'bg-white/10 hover:bg-white/20 text-white border-2 border-white/20 hover:border-white/30 backdrop-blur-sm focus:ring-white/30',
+    primary: 'bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-purple-500/25 focus:ring-purple-500 active:shadow-purple-500/40',
+    secondary: 'bg-white/10 hover:bg-white/20 text-white border-2 border-white/20 hover:border-white/30 backdrop-blur-sm focus:ring-white/30 active:bg-white/25 active:border-white/40',
   };
 
   const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${className}`;
